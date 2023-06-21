@@ -699,6 +699,14 @@
   text-align: center;
 }
 
+.reviews-slider {
+
+  @include vp-519 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 
 //map
 
