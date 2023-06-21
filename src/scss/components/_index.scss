@@ -854,7 +854,7 @@
   }
 }
 
-.map__block:nth-child(2) {
+.map__block--centered {
   margin-top: 100px;
 
   @include vp-767 {
