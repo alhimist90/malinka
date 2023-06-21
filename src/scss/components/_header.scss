@@ -5,10 +5,13 @@
 .header__logo {
   display: flex;
 
+  margin-right: auto;
+
   margin-bottom: 40px;
 
   @include vp-1023 {
     justify-content: center;
+    margin-right: 0;
   }
 
   img {
