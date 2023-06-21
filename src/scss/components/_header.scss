@@ -10,6 +10,14 @@
   @include vp-1023 {
     justify-content: center;
   }
+
+  img {
+    transition: 0.3s;
+  }
+
+  &:hover img {
+    opacity: 0.5;
+  }
 }
 
 .header__wrapper {
@@ -38,7 +46,7 @@
   z-index: -1;
 
   @include vp-519 {
-    display: none;
+    top: 101px;
   }
 }
 
@@ -49,23 +57,46 @@
 .header__nav {
 
   @include vp-1023 {
-    background: rgba(123, 109, 109, 0.1);
-    backdrop-filter: blur(50px);
+    background-color: #fff;
+  }
+}
+
+.header__nav-wrapper-social {
+  display: flex;
+  gap: 30px;
+
+  @include vp-1023 {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  @include vp-519 {
+    flex-direction: row;
+    gap: 20px;
   }
 }
 
 .header__nav-wrapper {
   padding-top: 30px;
-  padding-bottom: 30px;;
+  padding-bottom: 30px;
 
   display: flex;
   gap: 30px;
   align-items: center;
 
+  @include vp-1023 {
+    justify-content: space-between;
+    gap: 0;
+  }
+
   @include vp-519 {
     flex-direction: column;
     gap: 15px;
     align-items: start;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
   }
 }
 
@@ -74,6 +105,10 @@
   font-size: 18px;
   line-height: 130%;
   color: #000000;
+
+  @include vp-1023 {
+    max-width: 285px;
+  }
 }
 
 .header__title {
@@ -104,6 +139,8 @@
       backdrop-filter: none;
 
       font-size: 25px;
+
+      margin-top: 140px;
     }
 }
 
@@ -118,6 +155,10 @@
   min-width: 275px;
 
   margin-top: 50px;
+
+  @include vp-519 {
+    margin-top: -10px;
+  }
 }
 
 .header__advantages-list {

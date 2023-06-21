@@ -4,261 +4,287 @@
 @include('partials/head.html')
 
 <body class="page__body">
-  @include('partials/header.html')
-  <main class="main">
-    <section class="about">
-      <div class="about__wrapper container">
-        <div class="about__gallery">
-          <picture class="about__gallery-picture" data-aos="fade-down-left" data-aos-duration="3000">
-            <source srcset="img/about_image-1@1x.webp, img/about_image-1@2x.webp 2x" type="image/webp">
-            <img loading="lazy" src="img/about_image-1@1x.jpg" class="image" width="434" height="260" alt="" srcset="img/about_image-1@2x.jpg 2x">
-          </picture>
-          <picture class="about__gallery-picture" data-aos="fade-down-right" data-aos-duration="3000">
-            <source srcset="img/about_image-2@1x.webp, img/about_image-2@2x.webp 2x" type="image/webp">
-            <img loading="lazy" src="img/about_image-2@1x.jpg" class="image" width="407" height="244" alt="" srcset="img/about_image-2@2x.jpg 2x">
-          </picture>
-        </div>
-        <div class="about__content"  data-aos="fade-left" data-aos-duration="2000">
-          <h2 class="about__title text--caption">О нас</h2>
-          <p class="about__lead title--h3">Отличное место для семейного отдыха в Красноярском крае</p>
-          <p class="about__text text--main">
-            «Малинки» – это почти три тысячи квадратных метров территории и 12 гостевых домиков на 4-6 человек каждый.
-            Здесь есть баня с зимним чаном и мангальные зоны, и большая терраса с видом на озеро. А так же, на озере выстроен лодочный причал.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="gallery">
-      <div class="gallery__wrapper">
-        <h2 class="gallery__title text--caption" data-aos="fade-top" data-aos-duration="2000">Познакомьтесь с нашей базой отдыха</h2>
-        <div class="swiper gallery-slider" data-aos="flip-down" data-aos-duration="2000">
-          <div class="swiper-wrapper">
-             <div class="swiper-slide">
-              <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery" data-caption="Caption #1">
-                <picture>
-                  <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
-                  <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
-                </picture>
-              </a>
-             </div>
-             <div class="swiper-slide">
-              <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery" data-caption="Caption #1">
-                <picture>
-                  <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
-                  <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
-                </picture>
-              </a>
-             </div>
-             <div class="swiper-slide">
-              <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery" data-caption="Caption #1">
-                <picture>
-                  <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
-                  <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
-                </picture>
-              </a>
-             </div>
-             <div class="swiper-slide">
-              <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery" data-caption="Caption #1">
-                <picture>
-                  <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
-                  <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
-                </picture>
-              </a>
-             </div>
-             <div class="swiper-slide">
-              <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery" data-caption="Caption #1">
-                <picture>
-                  <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
-                  <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
-                </picture>
-              </a>
-             </div>
-             <div class="swiper-slide">
-              <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery" data-caption="Caption #1">
-                <picture>
-                  <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
-                  <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
-                </picture>
-              </a>
-             </div>
-             <div class="swiper-slide">
-              <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery" data-caption="Caption #1">
-                <picture>
-                  <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
-                  <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
-                </picture>
-              </a>
-             </div>
+  <div>
+    @include('partials/header.html')
+    <main class="main">
+      <section class="about">
+        <div class="about__wrapper container">
+          <div class="about__gallery">
+            <picture class="about__gallery-picture" data-aos="fade-down-left" data-aos-duration="3000">
+              <source srcset="img/about_image-1@1x.webp, img/about_image-1@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/about_image-1@1x.jpg" class="image" width="434" height="260" alt="" srcset="img/about_image-1@2x.jpg 2x">
+            </picture>
+            <picture class="about__gallery-picture" data-aos="fade-down-right" data-aos-duration="3000">
+              <source srcset="img/about_image-2@1x.webp, img/about_image-2@2x.webp 2x" type="image/webp">
+              <img loading="lazy" src="img/about_image-2@1x.jpg" class="image" width="407" height="244" alt="" srcset="img/about_image-2@2x.jpg 2x">
+            </picture>
           </div>
-          <div class="swiper-button-wrapper gallery-button-wrapper">
-            <div class="gallery-button gallery-button-prev swiper-button-prev">
-              <svg width="25" height="25">
-                <use xlink:href="img/sprite.svg#arrow--left"></use>
-              </svg>
-            </div>
-            <div class="gallery-button gallery-button-next swiper-button-next">
-              <svg width="25" height="25">
-                <use xlink:href="img/sprite.svg#arrow--right"></use>
-              </svg>
-            </div>
+          <div class="about__content"  data-aos="fade-left" data-aos-duration="2000">
+            <h2 class="about__title text--caption">О нас</h2>
+            <p class="about__lead title--h3">Отличное место для семейного отдыха в Красноярском крае</p>
+            <p class="about__text text--main">
+              «Малинки» – это почти три тысячи квадратных метров территории и 12 гостевых домиков на 4-6 человек каждый.
+              Здесь есть баня с зимним чаном и мангальные зоны, и большая терраса с видом на озеро. А так же, на озере выстроен лодочный причал.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="advantages">
-      <div class="advantages__container container">
-        <h2 class="advantages__title text--caption" data-aos="fade-top" data-aos-duration="2000">У нас множество преимуществ, вы точно не заскучаете</h2>
-        <div class="advantages__wrapper">
-          <div class="advantages__block advantages__block--services">
-            <h3 class="advantages__block-title" data-aos="fade-top" data-aos-duration="2000">Услуги</h3>
-            <ul class="advantages__block-list" data-aos="fade-right" data-aos-duration="2000">
-              <li>
-                <a class="text--main" href="#">Баня</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Рукомойник</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Санузел</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Катамараны, лодки</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Русский чан на открытом воздухе</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Детская игровая площадка</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Спортивный инвентарь</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Рыбалка</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Мангалы, шампуры, решетки</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Плед</a>
-              </li>
-            </ul>
-            <div class="advantages__block-image"  data-aos="fade-left" data-aos-duration="2000">
-              <img src="img/malinka--red.svg" alt="" width="180" height="180">
+      </section>
+      <section class="gallery">
+        <div class="gallery__wrapper">
+          <h2 class="gallery__title text--caption" data-aos="fade-top" data-aos-duration="2000">Познакомьтесь с нашей базой отдыха</h2>
+          <div class="swiper gallery-slider" data-aos="flip-down" data-aos-duration="2000">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery">
+                  <picture>
+                    <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
+                    <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
+                  </picture>
+                </a>
+               </div>
+               <div class="swiper-slide">
+                <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery">
+                  <picture>
+                    <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
+                    <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
+                  </picture>
+                </a>
+               </div>
+               <div class="swiper-slide">
+                <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery">
+                  <picture>
+                    <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
+                    <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
+                  </picture>
+                </a>
+               </div>
+               <div class="swiper-slide">
+                <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery">
+                  <picture>
+                    <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
+                    <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
+                  </picture>
+                </a>
+               </div>
+               <div class="swiper-slide">
+                <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery">
+                  <picture>
+                    <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
+                    <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
+                  </picture>
+                </a>
+               </div>
+               <div class="swiper-slide">
+                <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery">
+                  <picture>
+                    <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
+                    <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
+                  </picture>
+                </a>
+               </div>
+               <div class="swiper-slide">
+                <a href="img/gallery_photo-1@1x.webp" data-fancybox="gallery">
+                  <picture>
+                    <source srcset="img/gallery_photo-1@1x.webp, img/gallery_photo-1@2x.webp 2x" type="image/webp">
+                    <img loading="lazy" src="img/gallery_photo-1@1x.jpg" class="image" width="300" height="200" alt="" srcset="img/gallery_photo-1@2x.jpg 2x">
+                  </picture>
+                </a>
+               </div>
             </div>
-          </div>
-          <div class="advantages__block advantages__block--sale">
-            <h3 class="advantages__block-title" data-aos="fade-top" data-aos-duration="2000">В продаже</h3>
-            <ul class="advantages__block-list" data-aos="fade-left" data-aos-duration="2000">
-              <li>
-                <a class="text--main" href="#">Уголь, дрова</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Розжиг</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Перчатки</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Одноразовая посуда</a>
-              </li>
-              <li>
-                <a class="text--main" href="#">Салфетки</a>
-              </li>
-            </ul>
-            <div class="advantages__block-image" data-aos="fade-right" data-aos-duration="2000">
-              <img src="img/malinka--red.svg" alt="" width="215" height="215">
-            </div>
-          </div>
-          <div class="advantages__block advantages__block--availability">
-            <h3 class="advantages__block-title" data-aos="fade-top" data-aos-duration="2000">В ассортименте</h3>
-            <ul class="advantages__block-list" data-aos="fade-right" data-aos-duration="2000">
-              <li>
-                <a class="text--main" href="#">Сладости, вода, прохладительные напитки, закуски к пиву, чай и кофе</a>
-              </li>
-            </ul>
-            <div class="advantages__block-image" data-aos="fade-left" data-aos-duration="2000">
-              <img src="img/malinka--red.svg" alt="" width="180" height="180">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="reviews__wrapper">
-        <h2 class="reviews__title text--caption" data-aos="fade-top" data-aos-duration="2000">Отзывы наших гостей</h2>
-        <p class="reviews__text text--main" data-aos="fade-top" data-aos-duration="2000">Здесь вы можете ознакомиться с отзывами и поделиться <br> своими впечатлениями</p>
-        <div class="swiper reviews-slider" data-aos="flip-down" data-aos-duration="2000">
-          <div class="swiper-wrapper">
-             <div class="swiper-slide">
-              <div class="reviews__review">
-                <p class="reviews__review-text text--main">Хорошая территория, уютные домики, что немаловажно.</p>
-                <div class="reviews__review-wrapper">
-                  <p class="reviews__review-name">Е. Анна</p>
-                  <p class="reviews__review-date">Май, 2023</p>
-                </div>
+            <div class="swiper-button-wrapper gallery-button-wrapper">
+              <div class="gallery-button gallery-button-prev swiper-button-prev">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#arrow--left"></use>
+                </svg>
               </div>
-             </div>
-             <div class="swiper-slide">
-              <div class="reviews__review">
-                <p class="reviews__review-text text--main">Хорошая территория, уютные домики, что немаловажно.</p>
-                <div class="reviews__review-wrapper">
-                  <p class="reviews__review-name">Е. Анна</p>
-                  <p class="reviews__review-date">Май, 2023</p>
-                </div>
+              <div class="gallery-button gallery-button-next swiper-button-next">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#arrow--right"></use>
+                </svg>
               </div>
-             </div>
-             <div class="swiper-slide">
-              <div class="reviews__review">
-                <p class="reviews__review-text text--main">Хорошая территория, уютные домики, что немаловажно.</p>
-                <div class="reviews__review-wrapper">
-                  <p class="reviews__review-name">Е. Анна</p>
-                  <p class="reviews__review-date">Май, 2023</p>
-                </div>
-              </div>
-             </div>
-          </div>
-          <div class="swiper-button-wrapper gallery-button-wrapper">
-            <div class="reviews-button reviews-button-prev swiper-button-prev">
-              <svg width="25" height="25">
-                <use xlink:href="img/sprite.svg#arrow--left"></use>
-              </svg>
-            </div>
-            <div class="reviews-button reviews-button-next swiper-button-next">
-              <svg width="25" height="25">
-                <use xlink:href="img/sprite.svg#arrow--right"></use>
-              </svg>
             </div>
           </div>
         </div>
-        <div class="reviews__button-wrapper">
-          <button class="reviews__button button button--white" data-aos="flip-down">Написать отзыв</button>
-        </div>
-      </div>
-    </section>
-    <section class="map">
-      <div class="map__wrapper container">
-        <h2 class="map__title text--caption" data-aos="fade-top" data-aos-duration="2000">Как добраться к нам</h2>
-        <div class="map__content-wrapper">
-          <div class="map__content-block text--main" data-aos="fade-right" data-aos-duration="2000">Выезжая с Норильска, остановка турбаза “Надежда”, либо остановка по требованию турбаза “Малинка”</div>
-          <div class="map__content-block text--main" data-aos="fade-left" data-aos-duration="2000">Дорога из района “Талнах” занимает примерно 5-10 минут. Остановка турбаза “Жарки”, либо по требованию остановка турбаза “Малинка”</div>
-        </div>
-        <div class="map__container-map">
-          <div class="map__block" data-aos="fade-right" data-aos-duration="2000">
-            <img src="img/map-1.png" alt="">
+      </section>
+      <section class="advantages">
+        <div class="advantages__container container">
+          <h2 class="advantages__title text--caption" data-aos="fade-top" data-aos-duration="2000">У нас множество преимуществ, вы точно не заскучаете</h2>
+          <div class="advantages__wrapper">
+            <div class="advantages__block advantages__block--services">
+              <h3 class="advantages__block-title" data-aos="fade-top" data-aos-duration="2000">Услуги</h3>
+              <ul class="advantages__block-list" data-aos="fade-right" data-aos-duration="2000">
+                <li>
+                  <a class="text--main" href="img/advantages_photo-1.jpg" data-fancybox="advantages">
+                    Баня
+                  </a>
+                  <img src="img/advantages_photo-1.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-1.jpg" data-fancybox="advantages">Рукомойник</a>
+                  <img src="img/advantages_photo-1.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-1.jpg" data-fancybox="advantages">Санузел</a>
+                  <img src="img/advantages_photo-1.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-1.jpg" data-fancybox="advantages">Катамараны, лодки</a>
+                  <img src="img/advantages_photo-1.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-1.jpg" data-fancybox="advantages">Русский чан на открытом воздухе</a>
+                  <img src="img/advantages_photo-1.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-1.jpg" data-fancybox="advantages">Детская игровая площадка</a>
+                  <img src="img/advantages_photo-1.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-1.jpg" data-fancybox="advantages">Спортивный инвентарь</a>
+                  <img src="img/advantages_photo-1.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-1.jpg" data-fancybox="advantages">Рыбалка</a>
+                  <img src="img/advantages_photo-1.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-1.jpg" data-fancybox="advantages">Мангалы, шампуры, решетки</a>
+                  <img src="img/advantages_photo-1.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-1.jpg" data-fancybox="advantages">Плед</a>
+                  <img src="img/advantages_photo-1.jpg" alt="" width="530" height="415">
+                </li>
+              </ul>
+              <div class="advantages__block-image"  data-aos="fade-left" data-aos-duration="2000">
+                <img src="img/malinka--red.svg" alt="" width="180" height="180">
+              </div>
+            </div>
+            <div class="advantages__block advantages__block--sale">
+              <h3 class="advantages__block-title" data-aos="fade-top" data-aos-duration="2000">В продаже</h3>
+              <ul class="advantages__block-list" data-aos="fade-left" data-aos-duration="2000">
+                <li>
+                  <a class="text--main" href="img/advantages_photo-2.jpg" data-fancybox="advantages">Уголь, дрова</a>
+                  <img src="img/advantages_photo-2.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-2.jpg" data-fancybox="advantages">Розжиг</a>
+                  <img src="img/advantages_photo-2.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-2.jpg" data-fancybox="advantages">Перчатки</a>
+                  <img src="img/advantages_photo-2.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-2.jpg" data-fancybox="advantages">Одноразовая посуда</a>
+                  <img src="img/advantages_photo-2.jpg" alt="" width="530" height="415">
+                </li>
+                <li>
+                  <a class="text--main" href="img/advantages_photo-2.jpg" data-fancybox="advantages">Салфетки</a>
+                  <img src="img/advantages_photo-2.jpg" alt="" width="530" height="415">
+                </li>
+              </ul>
+              <div class="advantages__block-image" data-aos="fade-right" data-aos-duration="2000">
+                <img src="img/malinka--red.svg" alt="" width="215" height="215">
+              </div>
+            </div>
+            <div class="advantages__block advantages__block--availability">
+              <h3 class="advantages__block-title" data-aos="fade-top" data-aos-duration="2000">В ассортименте</h3>
+              <ul class="advantages__block-list" data-aos="fade-right" data-aos-duration="2000">
+                <li>
+                  <a class="text--main" href="img/advantages_photo-3.jpg" data-fancybox="advantages">Сладости, вода, прохладительные напитки, закуски к пиву, чай и кофе</a>
+                  <img src="img/advantages_photo-3.jpg" alt="" width="530" height="415">
+                </li>
+              </ul>
+              <div class="advantages__block-image" data-aos="fade-left" data-aos-duration="2000">
+                <img src="img/malinka--red.svg" alt="" width="180" height="180">
+              </div>
+            </div>
           </div>
-          <div class="map__block" data-aos="fade-top" data-aos-duration="2000">
-            <img src="img/map-2.png" alt="">
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title text--caption" data-aos="fade-top" data-aos-duration="2000">Отзывы наших гостей</h2>
+          <p class="reviews__text text--main" data-aos="fade-top" data-aos-duration="2000">Здесь вы можете ознакомиться с отзывами и поделиться <br> своими впечатлениями</p>
+          <div class="swiper reviews-slider" data-aos="flip-down" data-aos-duration="2000">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                <div class="reviews__review">
+                  <p class="reviews__review-text text--main">Хорошая территория, уютные домики, что немаловажно.</p>
+                  <div class="reviews__review-wrapper">
+                    <p class="reviews__review-name">Е. Анна</p>
+                    <p class="reviews__review-date">Май, 2023</p>
+                  </div>
+                </div>
+               </div>
+               <div class="swiper-slide">
+                <div class="reviews__review">
+                  <p class="reviews__review-text text--main">Хорошая территория, уютные домики, что немаловажно.</p>
+                  <div class="reviews__review-wrapper">
+                    <p class="reviews__review-name">Е. Анна</p>
+                    <p class="reviews__review-date">Май, 2023</p>
+                  </div>
+                </div>
+               </div>
+               <div class="swiper-slide">
+                <div class="reviews__review">
+                  <p class="reviews__review-text text--main">Хорошая территория, уютные домики, что немаловажно.</p>
+                  <div class="reviews__review-wrapper">
+                    <p class="reviews__review-name">Е. Анна</p>
+                    <p class="reviews__review-date">Май, 2023</p>
+                  </div>
+                </div>
+               </div>
+            </div>
+            <div class="swiper-button-wrapper gallery-button-wrapper">
+              <div class="reviews-button reviews-button-prev swiper-button-prev">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#arrow--left"></use>
+                </svg>
+              </div>
+              <div class="reviews-button reviews-button-next swiper-button-next">
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#arrow--right"></use>
+                </svg>
+              </div>
+            </div>
           </div>
-          <div class="map__block">
-            <img src="img/map-3.png" alt="" data-aos="fade-left" data-aos-duration="2000">
+          <div class="reviews__button-wrapper" data-aos="flip-down">
+            <button class="reviews__button button button--white">Написать отзыв</button>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  @include('partials/footer.html')
-  @include('partials/modal.html')
+      </section>
+      <section class="map">
+        <div class="map__wrapper container">
+          <h2 class="map__title text--caption" data-aos="fade-top" data-aos-duration="2000">Как добраться к нам</h2>
+          <div class="map__content-wrapper">
+            <div class="map__content-block map__content-block--desktop text--main" data-aos="fade-right" data-aos-duration="2000">Выезжая с Норильска, остановка турбаза “Надежда”, либо остановка по требованию турбаза “Малинка”</div>
+            <div class="map__content-block map__content-block--desktop text--main" data-aos="fade-left" data-aos-duration="2000">Дорога из района “Талнах” занимает примерно 5-10 минут. Остановка турбаза “Жарки”, либо по требованию остановка турбаза “Малинка”</div>
+          </div>
+          <div class="map__container-map">
+            <div class="map__block" data-aos="fade-right" data-aos-duration="2000">
+              <img class="map__block-image" src="img/map-1.png" alt="">
+            </div>
+            <div class="map__content-block map__content-block--mobile text--main" data-aos="fade-right" data-aos-duration="2000">Выезжая с Норильска, остановка турбаза “Надежда”, либо остановка по требованию турбаза “Малинка”</div>
+            <div class="map__block" data-aos="fade-top" data-aos-duration="2000">
+              <img class="map__block-image" src="img/map-2.png" alt="">
+              <div class="label-wrapper">
+                <img class="label" src="img/label.svg" alt="" width="53" height="78">
+                <div class="label-shadow shadow-bounce"></div>
+              </div>
+            </div>
+            <div class="map__content-block map__content-block--mobile text--main" data-aos="fade-left" data-aos-duration="2000">Дорога из района “Талнах” занимает примерно 5-10 минут. Остановка турбаза “Жарки”, либо по требованию остановка турбаза “Малинка”</div>
+            <div class="map__block">
+              <img class="map__block-image" src="img/map-3.png" alt="" data-aos="fade-left" data-aos-duration="2000">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/footer.html')
+    @include('partials/modal.html')
+  </div>
 </body>
 
 </html>
