@@ -93,7 +93,7 @@ a {
   }
 
   @include vp-519 {
-    max-width: none;
+    max-width: $vp-320;
   }
 }
 
