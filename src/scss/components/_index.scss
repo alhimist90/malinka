@@ -144,6 +144,11 @@
 
 .gallery__title {
   text-align: center;
+
+  @include vp-519 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 // swiper
@@ -588,13 +593,13 @@
 
 .reviews {
   background-color: rgba(214, 25, 66, 0.7);
-}
 
-.reviews__wrapper {
   padding: 100px 0;
 
   min-height: 885px;
+}
 
+.reviews__wrapper {
   background-image: url(../img/reviews-cover.svg);
   background-repeat: no-repeat;
   background-size: auto;
@@ -607,6 +612,11 @@
   color: #fff;
 
   font-weight: 700;
+
+  @include vp-519 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .reviews__text {
@@ -618,6 +628,9 @@
 
   @include vp-519 {
     margin-bottom: 50px;
+
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -787,6 +800,8 @@
   position: relative;
   z-index: 1;
 
+  width: 270px;
+
   @include vp-767 {
     text-align: center;
   }
@@ -799,6 +814,7 @@
 }
 
 .map__content-block--mobile {
+  font-size: 18px;
   display: none;
 
   @include vp-767 {
@@ -821,8 +837,7 @@
 }
 
 .map__container-map {
-  display: grid;
-  grid-template-columns: repeat(3, 270px);
+  display: flex;
   justify-content: center;
   gap: 75px;
 
@@ -847,8 +862,8 @@
   }
 
   @include vp-1023 {
-
-    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    align-items: center;
 
     &::before {
       background-image: none;
@@ -865,7 +880,7 @@
 .map__block--centered {
   margin-top: 100px;
 
-  @include vp-767 {
+  @include vp-1023 {
     margin-top: 0;
   }
 }
