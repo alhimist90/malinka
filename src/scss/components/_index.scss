@@ -807,6 +807,10 @@
   }
 }
 
+.map__block:hover .map__block-image {
+  transform: scale(1.1);
+}
+
 .map__content-block--desktop {
   @include vp-767 {
     display: none;
@@ -830,6 +834,8 @@
 
   height: 330px;
   width: 100%;
+
+  transition: transform 0.35s;
 
   @include vp-767 {
     width: 300px;
